@@ -1,0 +1,263 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* END Reset Css*/
+
+body {
+    color: #333333;
+    background-color: #f4f9ff;
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+header {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+header .header-logo a {
+    display: block;
+    width: 160px;
+    margin-bottom: 15px;
+}
+
+header .header-logo a .logo {
+    width: 100%;
+}
+
+header .header-img img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* index */
+.index {
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+.inner {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.index .inner {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.inner h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.index ol {
+    margin-left: 20px;
+}
+
+.index ol li {
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* detail */
+.detail {
+    margin-bottom: 120px;
+}
+
+.detail-content {
+    display: flex;
+
+}
+
+.detail-left {
+    width: 45%;
+    margin-right: 10%;
+}
+
+.detail-left img {
+    width: 100%;
+}
+
+.detail-right {
+    width: 45%;
+    font-size: 14px;
+}
+
+.detail-right h3 {
+    margin-bottom: 27px;
+    font-size: 18px;
+}
+
+.detail-right dl {
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    padding: 16px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.detail-right dl dt {
+    width: 25%;
+    line-height: 20px;
+}
+
+.detail-right dl dd {
+    width: 75%;
+    line-height: 20px;
+}
+
+.detail-right p {
+    margin: 30px 0;
+    line-height: 20px;
+}
+
+.detail-right a {
+    color: #333333;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.detail-right a:hover {
+    opacity: 0.7;
+} 
+
+footer p {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:1024px) {
+    header {
+        padding: 50px 10px;
+    }
+
+    .detail-content {
+        flex-direction: column;
+    }
+
+    .detail-left {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .detail-right {
+        width: 100%;
+    }
+
+    .inner {
+        padding: 0 40px;
+    }
+}
